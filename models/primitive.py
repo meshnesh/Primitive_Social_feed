@@ -8,10 +8,12 @@ json_list = r.json()
 
 
 
-# def get_post(json_list):
-#     for post in json_list:
-#      return post["title"]
-# print (get_post(json_list))
+def get_post():
+    r = requests.get('https://jsonplaceholder.typicode.com/posts')
+    json_list = r.json()
+    for post in json_list:
+        print (post["title"])
+
 
 def create_post():
     r = requests.post('https://jsonplaceholder.typicode.com/posts')
@@ -21,7 +23,17 @@ def create_post():
     data = parse.urlencode(req).encode()
     request_ = requests.Request(r, data=data)
     return request_
-    # resp = request.urlopen(request_)
-    # return resp
-print (create_post())
+
+print("Select operation.")
+print("1.View Posts")
+print("2.Create Posts")
+
+choice = int(input("Enter choice(1/2): "))
+if choice == 1:
+    get_post()
+elif choice == 2:
+    print (create_post())
+else:
+    print("Invalid choice")
+
 
