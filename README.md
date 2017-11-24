@@ -39,7 +39,6 @@ then
 ``` python3 python3 primitive.py ```
 ## Screen shots ##
 
-![Alt homepage](https://github.com/meshnesh/Bright-Events/blob/develop/designs/wireframes/bright_events_homepage.png)
-![Alt sign-in](https://github.com/meshnesh/Bright-Events/blob/develop/designs/wireframes/SIGN%20IN.png)
-![Alt login](https://github.com/meshnesh/Bright-Events/blob/develop/designs/wireframes/Login.png)
-![Alt event details](https://github.com/meshnesh/Bright-Events/blob/develop/designs/wireframes/desktop_card_page.png)
+![Alt step1](https://github.com/meshnesh/Primitive_Social_feed/blob/master/img/Screen%20Shot%202017-11-24%20at%2013.16.08.png)
+![Alt view-titles](https://github.com/meshnesh/Primitive_Social_feed/blob/master/img/Screen%20Shot%202017-11-24%20at%2013.16.26.png)
+![Alt create-post](https://github.com/meshnesh/Primitive_Social_feed/blob/master/img/Screen%20Shot%202017-11-24%20at%2013.16.52.png)
