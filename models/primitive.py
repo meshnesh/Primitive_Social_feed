@@ -25,4 +25,3 @@ def create_post():
     # return resp
 print (create_post())
 
-# print (json_list)

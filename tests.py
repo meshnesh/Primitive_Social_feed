@@ -1,4 +1,5 @@
 import unittest
+import requests
 
 class PrimitiveTests(unittest.TestCase):
     def setUp(self):
@@ -6,7 +7,12 @@ class PrimitiveTests(unittest.TestCase):
 
 
     def test_view_post(self):
-        self.assertEqual(self.url.status_code, 200)
+        self.resp = requests.get(self.url)
+        self.assertEqual(self.resp.status_code, 200)
+
+    def test_create_post(self):
+        self.resp = requests.post(self.url)
+        self.assertEqual(self.resp.status_code, 201)
 
 
 if __name__ == "__main__":
